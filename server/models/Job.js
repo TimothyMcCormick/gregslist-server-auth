@@ -5,6 +5,7 @@ const ObjectId = Schema.Types.ObjectId
 export const JobSchema = new Schema({
   creatorId: { type: ObjectId, required: true, ref: 'Account' },
   company: { type: String, required: true },
+  imgUrl: { type: String, required: true },
   jobTitle: { type: String, required: true },
   hours: { type: Number, required: true },
   rate: { type: Number, required: true },
